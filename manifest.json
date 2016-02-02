@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+
+    "name": "Yahoo mail enhancer",
+    "description": "Enhance yahoo mail with a bigger mail reader",
+    "version": "1.0",
+    "icons": {
+        "48": "logo.png"},
+    "content_scripts": [
+        {
+            "matches": ["https://*.mail.yahoo.com/*"],
+            "js": ["myscript.js"]
+        }
+    ]
+}
